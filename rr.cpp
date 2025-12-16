@@ -1,71 +1,44 @@
 //
-// by mark
+//  by mark
 //
 
-#include <string>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class User {
 private:
-    string name;
     int id;
-    string hash;
-    string bio;
-
+    string name;
 public:
-    User() : name(""), id(0), hash(""), bio("") {};
-
-    // УЛУЧШЕННЫЕ СЕТТЕРЫ
-    void setName(const string& newName) {
-        name = newName;
-    }
+    User() : id(0), name("") {};
 
     void setId(int newId) {
         id = newId;
     }
 
-    void setHash(const string& newHash) {
-        hash = newHash;
-    }
-
-    void setBio(const string& newBio) {
-        bio = newBio;
-    }
-
-    // УЛУЧШЕННЫЕ ГЕТТЕРЫ
-    const string& getName() const {
-        return name;
+    void setName(const string& newName) {
+        name = newName;
     }
 
     int getId() const {
         return id;
     }
 
-    const string& getHash() const {
-        return hash;
-    }
-
-    const string& getBio() const {
-        return bio;
+    const string& getName() const {
+        return name;
     }
 };
 
 int main() {
-    User root;
+    User mark;
 
-    // Устанавливаем через сеттеры
-    root.setName("root");
-    root.setId(0);
-    root.setHash("5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9");
-    root.setBio("био история крутого программиста лид архитекта");
+    mark.setName("mark");
+    mark.setId(0);
 
-    // Получаем через геттеры
-    cout << "Имя: " << root.getName() << endl;
-    cout << "ID: " << root.getId() << endl;
-    cout << "Хэш: " << root.getHash() << endl;
-    cout << "BIO: " << root.getBio() << endl;
-    
+    cout << "Имя: " << mark.getName() << endl;
+    cout << "ID: " << mark.getId() << endl;
+
     return 0;
 }
