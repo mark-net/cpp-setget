@@ -1,3 +1,7 @@
+//
+// by mark
+//
+
 #include <string>
 #include <iostream>
 
