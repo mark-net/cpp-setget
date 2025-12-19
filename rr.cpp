@@ -1,5 +1,5 @@
 //
-//  by mark
+//  by mark https://github.com/mark-net/cpp-setget
 //
 
 #include <iostream>
